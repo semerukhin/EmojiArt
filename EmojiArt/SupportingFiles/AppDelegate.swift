@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  EmojiArt
 //
-//  Created by MacBook Air on 12.08.2018.
-//  Copyright © 2018 Ilya Semerukhin. All rights reserved.
+//  Created by Ilya Semerukhin on 12.08.2018.
 //
 
 import UIKit
@@ -43,4 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
+
+
 
