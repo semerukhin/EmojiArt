@@ -65,17 +65,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlY-4i-iZn">
                                 <rect key="frame" x="0.0" y="20" width="703.5" height="748"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3S-dX-0kc" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTO-xX-VUD">
                                         <rect key="frame" x="0.0" y="0.0" width="703.5" height="748"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="g3S-dX-0kc" secondAttribute="bottom" id="95S-8w-8Tm"/>
-                                    <constraint firstAttribute="trailing" secondItem="g3S-dX-0kc" secondAttribute="trailing" id="QHN-KN-oNi"/>
-                                    <constraint firstItem="g3S-dX-0kc" firstAttribute="top" secondItem="vlY-4i-iZn" secondAttribute="top" id="fDn-Nr-MsU"/>
-                                    <constraint firstItem="g3S-dX-0kc" firstAttribute="leading" secondItem="vlY-4i-iZn" secondAttribute="leading" id="hX2-ki-SGn"/>
+                                    <constraint firstItem="TTO-xX-VUD" firstAttribute="top" secondItem="vlY-4i-iZn" secondAttribute="top" id="B3f-XI-nXe"/>
+                                    <constraint firstAttribute="bottom" secondItem="TTO-xX-VUD" secondAttribute="bottom" id="R4i-p1-A7h"/>
+                                    <constraint firstItem="TTO-xX-VUD" firstAttribute="leading" secondItem="vlY-4i-iZn" secondAttribute="leading" id="bNE-X8-S1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="TTO-xX-VUD" secondAttribute="trailing" id="hEh-u0-bLz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -90,7 +89,7 @@
                     </view>
                     <connections>
                         <outlet property="dropZone" destination="vlY-4i-iZn" id="hqZ-p7-q6S"/>
-                        <outlet property="emojiArtView" destination="g3S-dX-0kc" id="yYu-kC-Qtt"/>
+                        <outlet property="scrollView" destination="TTO-xX-VUD" id="chd-SQ-CX9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
