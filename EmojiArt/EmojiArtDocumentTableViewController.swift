@@ -32,6 +32,13 @@ class EmojiArtDocumentTableViewController: UITableViewController {
       tableView.reloadData()
    }
    
+   override func viewWillLayoutSubviews() {
+      super.viewWillLayoutSubviews()
+      if splitViewController?.preferredDisplayMode != .primaryOverlay {
+         splitViewController?.preferredDisplayMode = .primaryOverlay
+      }
+   }
+   
    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
          emojiArtDocuments.remove(at: indexPath.row)
